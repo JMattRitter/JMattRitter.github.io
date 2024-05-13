@@ -63,6 +63,13 @@
             bottom: 0;
             width: 100%;
         }
+        .profile-image {
+            border-radius: 15px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow to make sure the corners are rounded */
+        }
+        .profile-image img {
+            transform: scaleX(-1); /* Horizontally flip the image */
+        }
     </style>
 </head>
 <body>
@@ -92,16 +99,11 @@
                 border: none;
                 padding: 8px;
             }
-
-            .profile-image {
-                border-radius: 15px; /* Rounded corners */
-                overflow: hidden; /* Hide overflow to make sure the corners are rounded */
-            }
         </style>
 
         <table>
             <tr>
-                <td rowspan="5" class="profile-image"><img src="images/Profile1.jpg" alt="Profile1" style="transform: scaleX(-1);"></td>
+                <td rowspan="5" class="profile-image"><img src="images/Profile1.jpg" alt="Profile1"></td>
                 <td>Row 1, Column 2</td>
                 <td>Row 1, Column 3</td>
                 <td>Row 1, Column 4</td>
@@ -138,4 +140,3 @@
     </footer>
 </body>
 </html>
-
