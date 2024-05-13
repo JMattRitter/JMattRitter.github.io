@@ -63,6 +63,21 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Circular frame */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            transform: scaleY(-1); /* Vertically flip the image */
+        }
     </style>
 </head>
 <body>
@@ -82,6 +97,11 @@
         </ul>
     </nav>
     <main>
+        <!-- Circular profile image -->
+        <div class="profile-image">
+            <img src="images/Profile1.jpg" alt="Profile1">
+        </div>
+        
         <!-- Table -->
         <style>
             table {
@@ -96,7 +116,6 @@
 
         <table>
             <tr>
-                <td rowspan="5"><img src="images/Profile1.jpg" alt="Profile1"></td>
                 <td>Row 1, Column 2</td>
                 <td>Row 1, Column 3</td>
                 <td>Row 1, Column 4</td>
