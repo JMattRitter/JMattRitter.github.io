@@ -105,36 +105,42 @@
         <table>
             <tr>
                 <td rowspan="5" class="profile-image"><img src="images/Profile1.jpg" alt="Profile1" style="border-radius: 15px; transform: scaleX(-1);"></td>
-                <td columnspan="4">Education</td>
-                <td>Row 1, Column 3</td>
-                <td>Row 1, Column 4</td>
+                <td colspan="3"><b>Education</b></td>
                 <td>Row 1, Column 5</td>
             </tr>
             <tr>
-                <td class="rounded-image"><a href="https://www.l3harris.com/" target="_blank"><img src="images/l3h.png" alt="L3Harris"></a></td> <!-- Apply rounded corners -->
-                <td> Hi</td>
-                <td></td>
-                <td></td>
+                <td class="rounded-image" colspan="2"><a href="https://www.l3harris.com/" target="_blank"><img src="images/l3h.png" alt="L3Harris"></a></td> <!-- Apply rounded corners -->
+                <td><button id="expandButton" onclick="expandRow()">More</button></td>
+            </tr>
+            <tr id="expandedRow" style="display: none;">
+                <td colspan="3">Expanded Content</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
         </table>
+
+        <script>
+            function expandRow() {
+                var row = document.getElementById("expandedRow");
+                var button = document.getElementById("expandButton");
+
+                if (row.style.display === "none") {
+                    row.style.display = "table-row";
+                    button.innerHTML = "Less";
+                } else {
+                    row.style.display = "none";
+                    button.innerHTML = "More";
+                }
+            }
+        </script>
     </main>
     <footer>
         &copy; 2024 Matt Ritter
