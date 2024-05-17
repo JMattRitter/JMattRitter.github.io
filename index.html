@@ -73,6 +73,11 @@
         .large-font {
             font-size: 2em; /* Adjust the font size as needed */
         }
+        .uniform-size {
+            width: 150px; /* Set desired width */
+            height: 150px; /* Set desired height */
+            object-fit: cover; /* Ensure the image maintains aspect ratio and covers the area */
+        }
     </style>
 </head>
 <body>
@@ -109,21 +114,19 @@
                 <td colspan="5" class="large-font"><b>Education</b></td>
             </tr>
             <tr>
-                <td class="rounded-image" colspan="2"><a href="https://www.indianatech.edu/" target="_blank"><img src="images/IIT.jpg" alt="IIT"></a></td> <!-- Apply rounded corners -->
+                <td class="rounded-image" colspan="2"><a href="https://www.indianatech.edu/" target="_blank"><img src="images/IIT.jpg" alt="IIT" class="uniform-size"></a></td> <!-- Apply uniform size -->
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr>
-                <td class="rounded-image" colspan="2"><a href="https://www.huntington.edu/" target="_blank"><img src="images/HU.png" alt="HU"></a></td> <!-- Apply rounded corners -->
+                <td class="rounded-image" colspan="2"><a href="https://www.huntington.edu/" target="_blank"><img src="images/HU.png" alt="HU" class="uniform-size"></a></td> <!-- Apply uniform size -->
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr>
-                <td class="rounded-image" colspan="2"><a href="https://www.ivytech.edu/" target="_blank"><img src="images/IVYTech.png" alt="IvyTech"></a></td> <!-- Apply rounded corners -->
+                <td class="rounded-image" colspan="2"><a href="https://www.ivytech.edu/" target="_blank"><img src="images/IVYTech.png" alt="IvyTech" class="uniform-size"></a></td> <!-- Apply uniform size -->
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
-
-            
             <tr>
-                <td class="rounded-image" colspan="2"><a href="https://www.l3harris.com/" target="_blank"><img src="images/l3h.png" alt="L3Harris"></a></td> <!-- Apply rounded corners -->
+                <td class="rounded-image" colspan="2"><a href="https://www.l3harris.com/" target="_blank"><img src="images/l3h.png" alt="L3Harris" class="uniform-size"></a></td> <!-- Apply uniform size -->
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr id="expandedRow" style="display: none;">
