@@ -78,6 +78,15 @@
             height: 75px; /* Set desired height */
             object-fit: cover; /* Ensure the image maintains aspect ratio and covers the area */
         }
+        table {
+            border-collapse: collapse;
+            width: 100%; /* Full width table */
+            border: 1px solid black; /* Add border to the table */
+        }
+        td, th {
+            border: 1px solid black; /* Add border to table cells */
+            padding: 8px;
+        }
     </style>
 </head>
 <body>
@@ -97,17 +106,6 @@
     </nav>
     <main>
         <!-- Table -->
-        <style>
-            table {
-                border-collapse: collapse;
-            }
-
-            td, th {
-                border: none;
-                padding: 8px;
-            }
-        </style>
-
         <table>
             <tr>
                 <td rowspan="5" class="profile-image"><img src="images/Profile1.jpg" alt="Profile1" style="border-radius: 15px; transform: scaleX(-1);"></td>
@@ -115,31 +113,35 @@
             </tr>
             <tr>
                 <td class="rounded-image" colspan="2"><a href="https://www.indianatech.edu/" target="_blank"><img src="images/IIT.jpg" alt="IIT" class="uniform-size"></a></td> <!-- Apply uniform size -->
-                <td>Indiana Insitute of Techonology</td>
-                
+                <td>Indiana Institute of Technology</td>
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr>
                 <td class="rounded-image" colspan="2"><a href="https://www.huntington.edu/" target="_blank"><img src="images/HU.png" alt="HU" class="uniform-size"></a></td> <!-- Apply uniform size -->
+                <td>Huntington University</td>
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr>
                 <td class="rounded-image" colspan="2"><a href="https://www.ivytech.edu/" target="_blank"><img src="images/IVYTech.png" alt="IvyTech" class="uniform-size"></a></td> <!-- Apply uniform size -->
+                <td>Ivy Tech Community College</td>
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr>
                 <td class="rounded-image" colspan="2"><a href="https://www.l3harris.com/" target="_blank"><img src="images/l3h.png" alt="L3Harris" class="uniform-size"></a></td> <!-- Apply uniform size -->
+                <td>L3Harris Technologies</td>
                 <td><button id="expandButton" onclick="expandRow()">More</button></td>
             </tr>
             <tr id="expandedRow" style="display: none;">
-                <td colspan="3">Expanded Content</td>
+                <td colspan="4">Expanded Content</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
             <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
