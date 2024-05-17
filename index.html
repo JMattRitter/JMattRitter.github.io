@@ -159,6 +159,28 @@
     <footer>
         &copy; 2024 Matt Ritter
     </footer>
+
+<script>
+        function showSummary() {
+            var summaryDiv = document.getElementById("summary");
+            var buttonsDiv = document.getElementById("l3h_buttons");
+            var summaryButton = buttonsDiv.getElementsByTagName("button")[0];
+
+            if (summaryDiv.innerHTML === "") {
+                summaryDiv.innerHTML = "Hi Summary";
+                summaryButton.innerHTML = "Hide Summary";
+            } else {
+                summaryDiv.innerHTML = "";
+                summaryButton.innerHTML = "See Summary";
+            }
+        }
+
+        function showList() {
+            // Your logic for showing list
+        }
+    </script>
+
+    
 </body>
 </html>
 
