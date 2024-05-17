@@ -143,6 +143,8 @@
             <tr>
                 <td colspan="4" class="large-font"><b>Experience</b></td>
             </tr>
+
+            
             <tr>
                 <td class="rounded-image"><a href="https://www.l3harris.com/" target="_blank"><img src="images/l3h.png" alt="L3Harris" class="uniform-size"></a></td>
                 <td colspan="3">
@@ -154,17 +156,23 @@
                     <div id="summary"></div>
                 </td>
             </tr>
+
+
+
+
+
+            
         </table>
     </main>
     <footer>
         &copy; 2024 Matt Ritter
     </footer>
 
-<script>
+    <script>
         function showSummary() {
             var summaryDiv = document.getElementById("summary");
             var buttonsDiv = document.getElementById("l3h_buttons");
-            var summaryButton = buttonsDiv.getElementsByTagName("button")[0];
+            var summaryButton = buttonsDiv.getElementsByTagName("button")[1];
 
             if (summaryDiv.innerHTML === "") {
                 summaryDiv.innerHTML = "Hi Summary";
