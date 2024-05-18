@@ -49,6 +49,7 @@
         }
         main {
             padding: 20px;
+            padding-bottom: 60px; /* Add padding to the bottom */
         }
         video {
             width: 100%;
@@ -172,7 +173,7 @@
         function showSummary() {
             var summaryDiv = document.getElementById("summary");
             var buttonsDiv = document.getElementById("l3h_buttons");
-            var summaryButton = buttonsDiv.getElementsByTagName("button")[1];
+            var summaryButton = buttonsDiv.getElementsByTagName("button")[0];
 
             if (summaryDiv.innerHTML === "") {
                 summaryDiv.innerHTML = "Hi Summary";
