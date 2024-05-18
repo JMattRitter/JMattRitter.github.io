@@ -84,10 +84,15 @@
             width: 100%; /* Full width table */
             border: 1px solid black; /* Add border to the table */
         }
-        border: none; /* Remove existing borders */
+        td, th {
+            border: none; /* Remove existing borders */
             border-bottom: 1px solid black; /* Add bottom border */
             padding: 8px;
             vertical-align: top; /* Align content at the top */
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid black; /* Add bottom border to the last row */
         }
         .image-cell {
             text-align: center; /* Center align the images */
